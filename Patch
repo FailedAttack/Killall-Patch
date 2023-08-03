@@ -1,0 +1,3 @@
+iptables -t nat -A POSTROUTING -o eth0 -p udp -j SNAT --to 8.8.8.8
+
+iptables -t nat -A POSTROUTING -o eth0 -p tcp -j SNAT --to 1.1.1.1
